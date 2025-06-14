@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #000022;
+  margin: 0;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #ffcc5b;
+}
+
+nav a {
+  color: #ffcc5b;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+form input,
+form textarea {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}

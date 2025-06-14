@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <h1>Contact TechWorld Global</h1>
+    <form action="/contact/" method="POST">
+        {% csrf_token %}
+        <input name="name" placehold

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Jobs</title>
+  </head>
+  <body>
+    <h1>Job Application</h1>
+    <form action="/jobs/" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <input name="name" placeholder="Your Name" /><br />
+      <input name="email" placeholder="Your Email" /><br />
+      <textarea name="coverletter" placeholder="Cover Letter"></textarea><br />
+      <input type="file" name="resume" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

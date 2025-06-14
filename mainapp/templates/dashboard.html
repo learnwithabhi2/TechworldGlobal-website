@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <h1>Admin Dashboard</h1>
+
+    <h2>Contacts</h2>
+    <ul>
+      {% for item in contacts %}
+      <li>{{ item.name }} - {{ item.email }} - {{ item.message }}</li>
+      {% endfor %}
+    </ul>
+
+    <h2>Job Applications</h2>
+    <ul>
+      {% for item in applications %}
+      <li>{{ item.name }} - {{ item.email }} - {{ item.coverletter }}</li>
+      {% endfor %}
+    </ul>
+
+    <h2>Client Feedback</h2>
+    <ul>
+      {% for item in reviews %}
+      <li>{{ item.name }} - {{ item.email }} - {{ item.feedback }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
